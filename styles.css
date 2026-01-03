@@ -241,6 +241,11 @@ footer {
     text-decoration: none;
 }
 
+/* Do not show the animated underline on the floating contact button */
+.floating-contact-button::after {
+    content: none;
+}
+
 .floating-contact-button:hover,
 .floating-contact-button:focus {
     filter: brightness(1.05);
