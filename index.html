@@ -2,74 +2,31 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ryan Lynch's Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+            description="Ryan Lynch's personal portfolio website"
         />
+        <title>Ryan Lynch's Portfolio</title>
+        <link rel="stylesheet" href="./styles.css" />
     </head>
 
-    <body style="font-size: 20px">
+    <body>
         <header>
             <h1>Ryan Lynch</h1>
             <nav>
-                <ul
-                    style="
-                        list-style: none;
-                        display: flex;
-                        gap: 20px;
-                        padding: 0;
-                    "
-                >
+                <ul>
                     <li>
-                        <a
-                            href="#about"
-                            style="
-                                text-decoration: none;
-                                color: var(--color-primary);
-                            "
-                            onmouseover="this.style.textDecoration='underline'"
-                            onmouseout="this.style.textDecoration='none'"
-                            >About</a
-                        >
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a
-                            href="#projects"
-                            style="
-                                text-decoration: none;
-                                color: var(--color-primary);
-                            "
-                            onmouseover="this.style.textDecoration='underline'"
-                            onmouseout="this.style.textDecoration='none'"
-                            >Projects</a
-                        >
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a
-                            href="#cv"
-                            style="
-                                text-decoration: none;
-                                color: var(--color-primary);
-                            "
-                            onmouseover="this.style.textDecoration='underline'"
-                            onmouseout="this.style.textDecoration='none'"
-                            >CV</a
-                        >
+                        <a href="#cv">CV</a>
                     </li>
                     <li>
-                        <a
-                            href="#contact"
-                            style="
-                                text-decoration: none;
-                                color: var(--color-primary);
-                            "
-                            onmouseover="this.style.textDecoration='underline'"
-                            onmouseout="this.style.textDecoration='none'"
-                            >Contact</a
-                        >
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -78,10 +35,112 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                I'm a software developer with a passion for creating web
-                applications. I love learning new technologies and improving my
-                skills.
+                I'm a software engineer based in Dublin, Ireland, working at
+                Microsoft on AI-powered provisioning experiences for SharePoint.
+                I focus on frontend and fullstack engineering with React,
+                TypeScript, and Fluent UI, and I care about building reliable,
+                well-tested experiences at enterprise scale.
             </p>
+            <p>
+                Outside of work I build tools like the Irish Mortgage Calculator
+                and Goals Bingo, plus browser extensions, editor plugins, and
+                bespoke web apps for small businesses, friends, and family. I'm
+                especially interested in using AI and thoughtful, accessible UX
+                to make complex workflows easier for people.
+            </p>
+            <details>
+                <summary>Technologies</summary>
+                <h3>Frontend &amp; App Development</h3>
+                <ul>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Next.js</li>
+                    <li>Progressive Web Apps (PWAs)</li>
+                    <li>Chrome/Edge browser extensions</li>
+                    <li>Storybook</li>
+                    <li>Microsoft Teams app development</li>
+                </ul>
+
+                <h3>Testing &amp; Quality</h3>
+                <ul>
+                    <li>Jest</li>
+                    <li>React Testing Library</li>
+                    <li>Playwright</li>
+                    <li>axe &amp; screen reader testing</li>
+                </ul>
+
+                <h3>Accessibility &amp; Localisation</h3>
+                <ul>
+                    <li>WCAG &amp; accessible UI development</li>
+                    <li>Screen reader testing</li>
+                    <li>Localisation-ready UI design</li>
+                </ul>
+
+                <h3>Tooling &amp; CI/CD</h3>
+                <ul>
+                    <li>ESLint &amp; Prettier</li>
+                    <li>Webpack / Vite</li>
+                    <li>Git</li>
+                    <li>CI/CD with GitHub Actions</li>
+                    <li>CI/CD with Azure Pipelines</li>
+                </ul>
+
+                <h3>AI</h3>
+                <ul>
+                    <li>
+                        Building AI-powered tools to support development
+                        workflows
+                    </li>
+                    <li>Using AI and AI agents in day-to-day coding</li>
+                </ul>
+
+                <h3>Platforms &amp; Hosting</h3>
+                <ul>
+                    <li>Azure Static Web Apps</li>
+                    <li>Vercel</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Work Experience</summary>
+                <h3>Microsoft (2022 - Present)</h3>
+                <ul>
+                    <li>
+                        AI &amp; fullstack engineering on SharePoint
+                        provisioning experiences in OneDrive &amp; SharePoint.
+                    </li>
+                    <li>
+                        Previously shipped features for frontline workforce
+                        scheduling in Microsoft Teams (Shifts).
+                    </li>
+                    <li>
+                        Led accessibility initiatives that achieved Microsoft's
+                        highest internal accessibility grade.
+                    </li>
+                    <li>
+                        Embed WCAG-aligned practices, inclusive design, and
+                        strong testing into everyday development.
+                    </li>
+                </ul>
+
+                <h3>Previous Experience</h3>
+                <ul>
+                    <li>
+                        Amazon Web Services — backend reliability and service
+                        health monitoring.
+                    </li>
+                    <li>
+                        SAP — augmented analytics product management and
+                        competitive analysis.
+                    </li>
+                    <li>
+                        Oracle — developer advocacy and emerging technology
+                        outreach.
+                    </li>
+                </ul>
+            </details>
         </section>
         <section id="projects">
             <h2>Projects</h2>
@@ -96,11 +155,44 @@
                     <strong>interest rate</strong>, and
                     <strong>loan term</strong>.
                 </p>
+
+                <h4>Tech Stack</h4>
+
                 <p>
                     It is built using <strong>React</strong>,
                     <strong>TypeScript</strong>, and
-                    <strong>Fluent UI v8</strong>, and is hosted on
+                    <strong>Fluent UI v9</strong>, and is hosted on
                     <strong>Azure Static Web Apps</strong>.
+                </p>
+
+                <h4>Motivation</h4>
+
+                <p>
+                    When my partner and I were looking to buy our first home, we
+                    found it difficult to find a mortgage calculator that let us
+                    compare the mortgage options across banks and for each house
+                    we were looking at. The available calculators often were
+                    more for finding a mortgage product rather than quickly
+                    comparing monthly payments for different scenarios.
+                </p>
+
+                <p>
+                    I made this as a "bring your own terms" mortgage calculator
+                    to help us quickly calculate and compare monthly payments
+                    for the mortgage options we were already approved for.
+                </p>
+
+                <h4>Try It Out</h4>
+
+                <p>
+                    You can try out the calculator below or visit the live site
+                    at
+                    <a
+                        href="https://onlinemortgagecalculator.ie"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >onlinemortgagecalculator.ie</a
+                    >.
                 </p>
 
                 <iframe
@@ -113,8 +205,6 @@
                 ></iframe>
             </details>
 
-            <br />
-
             <details>
                 <summary>Goals Bingo</summary>
 
@@ -125,8 +215,53 @@
                     friends.
                 </p>
 
+                <h4>Tech Stack</h4>
+
+                <p>
+                    It is built using <strong>React</strong> and
+                    <strong>TypeScript</strong>, and is hosted on
+                    <strong>Vercel</strong>.
+                </p>
+
+                <p>
+                    It can be installed as a Progressive Web App (PWA) on both
+                    desktop and mobile devices.
+                </p>
+
+                <h4>Motivation</h4>
+
+                <p>
+                    I originally built Goals Bingo for myself and my friends as
+                    a different take on New Year's resolutions. Instead of a
+                    simple pass/fail list written in one evening, we create a
+                    bingo card filled with goals of varying difficulty. Over the
+                    year we try to complete a row, column, or diagonal,
+                    reflecting the idea that life isn't about hitting every goal
+                    perfectly, but about continually improving and celebrating
+                    the progress you do make.
+                </p>
+
+                <p>
+                    I made this app so it can be used offline as a PWA, so my
+                    friends who were doing a lot of travel could still plan
+                    their goals on a plane (and because I just wanted to learn
+                    how to make a PWA!).
+                </p>
+
+                <h4>Try It Out</h4>
+
+                <p>
+                    You can try out the app below or visit the live site at
+                    <a
+                        href="https://goals-bingo.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >goals-bingo.vercel.app</a
+                    >.
+                </p>
+
                 <iframe
-                    src="https://goals-bingo.azurewebsites.net/"
+                    src="https://goals-bingo.vercel.app/"
                     frameborder="0"
                     width="100%"
                     height="750px"
@@ -161,21 +296,30 @@
 
             <ul style="list-style: none; padding: 0">
                 <li>
-                    <a href="mailto:ryanjetbox@gmail.com" target="_blank"
-                        >Email</a
-                    >
+                    <a href="mailto:ryanjetbox@gmail.com" target="_blank">
+                        <span class="contact-icon" aria-hidden="true">✉</span>
+                        <span>Email</span>
+                    </a>
                 </li>
                 <li>
                     <a
                         href="https://www.linkedin.com/in/lynchryan2/"
                         target="_blank"
-                        >LinkedIn</a
                     >
+                        <span class="contact-icon" aria-hidden="true">in</span>
+                        <span>LinkedIn</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="https://www.github.com/uniqueclone" target="_blank"
-                        >GitHub</a
+                    <a
+                        href="https://www.github.com/uniqueclone"
+                        target="_blank"
                     >
+                        <span class="contact-icon" aria-hidden="true"
+                            >&lt;/&gt;</span
+                        >
+                        <span>GitHub</span>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -190,6 +334,11 @@
                     new Date().getFullYear();
             </script>
         </footer>
+
+        <a href="#contact" class="floating-contact-button">
+            <span class="floating-contact-icon" aria-hidden="true">✉</span>
+            <span>Get in touch!</span>
+        </a>
 
         <script src="script.js"></script>
     </body>
