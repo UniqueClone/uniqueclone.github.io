@@ -41,6 +41,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* Ensure anchor targets are not hidden behind the sticky header */
+    scroll-padding-top: 10rem;
 }
 
 *,
