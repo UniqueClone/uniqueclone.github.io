@@ -8,6 +8,9 @@
     --card-border-color: rgba(124, 58, 237, 0.18);
     --card-shadow-color: rgba(124, 58, 237, 0.14);
 
+    /* Header background (slightly translucent to show page gradient) */
+    --header-bg-color: rgba(245, 243, 255, 0.9);
+
     --accent-color: #7c3aed; /* violet accent for links/buttons */
     --accent-color-soft: rgba(124, 58, 237, 0.08);
     --accent-border-soft: rgba(124, 58, 237, 0.24);
@@ -23,6 +26,8 @@
         --card-border-color: rgba(148, 163, 184, 0.4);
         --card-shadow-color: rgba(0, 0, 0, 0.5);
 
+        --header-bg-color: rgba(2, 6, 23, 0.2);
+
         --accent-color: #a855f7; /* slightly brighter violet for dark */
         --accent-color-soft: rgba(168, 85, 247, 0.12);
         --accent-border-soft: rgba(168, 85, 247, 0.4);
@@ -37,6 +42,8 @@
         --card-bg-color: #ffffff;
         --card-border-color: rgba(124, 58, 237, 0.18);
         --card-shadow-color: rgba(124, 58, 237, 0.14);
+
+        --header-bg-color: rgba(245, 243, 255, 0.9);
 
         --accent-color: #7c3aed;
         --accent-color-soft: rgba(124, 58, 237, 0.08);
@@ -57,13 +64,29 @@ html {
 }
 
 body {
-    margin: 0 4rem;
+    margin: 0;
     font-size: 20px;
     line-height: 1.6;
     background-color: var(--bg-color);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.14) 0, transparent 55%),
+        radial-gradient(
+            at 100% 100%,
+            rgba(37, 99, 235, 0.18) 0,
+            transparent 55%
+        );
+    background-attachment: fixed;
     color: var(--text-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
         sans-serif;
+}
+
+main {
+    margin: 0 4rem;
 }
 
 strong {
@@ -79,8 +102,8 @@ strong {
 
 header,
 footer {
-    max-width: 900px;
-    margin: 0 auto;
+    /* max-width: 900px; */
+    /* margin: 0 auto; */
     padding: 1.5rem 1.25rem;
 }
 
@@ -102,13 +125,22 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--bg-color);
+    background-color: var(--header-bg-color);
+    backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid var(--card-border-color);
-    box-shadow: 0 6px 16px -14px var(--card-shadow-color);
+    box-shadow: 0 10px 30px -24px var(--card-shadow-color);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.75rem;
     margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+header > * {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 4rem;
 }
 
 h1 {
@@ -188,7 +220,10 @@ details > *:not(summary) {
     transform: translateY(-4px);
     max-height: 0;
     overflow: hidden;
-    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.6s ease;
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        max-height 0.6s ease;
 }
 
 details[open] > *:not(summary) {
@@ -212,7 +247,21 @@ section {
     margin: 0 auto 2rem;
     padding: 1.5rem 1.25rem;
     border: 1px solid var(--card-border-color);
+    border-top: 3px solid var(--accent-border-soft);
     border-radius: 1rem;
+    background: var(--card-bg-color);
+    box-shadow: 0 18px 45px -25px var(--card-shadow-color);
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.16s ease-out,
+        box-shadow 0.16s ease-out,
+        border-color 0.16s ease-out;
+}
+
+section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 60px -32px var(--card-shadow-color);
 }
 
 .pills-menu {
@@ -254,7 +303,9 @@ details .menu-pill {
     margin-bottom: 0.5rem;
     opacity: 0;
     transform: translateY(4px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
 }
 
 .skills-panel {
@@ -293,11 +344,11 @@ footer {
     padding: 0.85rem 1.4rem;
     border-radius: 999px;
     border: none;
-    background: var(--accent-color);
+    background-image: linear-gradient(135deg, #7c3aed, #2563eb);
+
     color: #ffffff;
     font-weight: 600;
     font-size: 0.95rem;
-    box-shadow: 0 12px 30px -15px rgba(15, 23, 42, 0.6);
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -312,7 +363,7 @@ footer {
 
 .floating-contact-button:hover,
 .floating-contact-button:focus {
-    filter: brightness(1.05);
+    filter: brightness(1.5);
     text-decoration: none;
 }
 
@@ -332,11 +383,15 @@ footer {
 @media (max-width: 640px) {
     body {
         font-size: 18px;
-        margin: 0 20px;
+        margin: 0;
     }
 
     header {
         position: relative;
+    }
+
+    header > * {
+        padding: 0 1rem;
     }
 
     main,

@@ -32,765 +32,780 @@
             </nav>
         </header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a frontend-focused software engineer based in Dublin,
-                Ireland, currently working at Microsoft. I build complex React
-                and TypeScript interfaces, lead accessibility transformations,
-                and ship high-quality, test-driven UI features for large-scale
-                products.
-            </p>
-            <p>
-                My experience spans state management, dynamic and schema-driven
-                forms, and fullstack integrations with platforms like SharePoint
-                and Supabase. I focus on building accessible, WCAG-aligned
-                interfaces, with strong automated testing and developer tooling
-                to keep large codebases reliable over time.
-            </p>
-            <details>
-                <summary>Core Skills & Technologies</summary>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm a frontend-focused software engineer based in Dublin,
+                    Ireland, currently working at Microsoft. I build complex
+                    React and TypeScript interfaces, lead accessibility
+                    transformations, and ship high-quality, test-driven UI
+                    features for large-scale products.
+                </p>
+                <p>
+                    My experience spans state management, dynamic and
+                    schema-driven forms, and fullstack integrations with
+                    platforms like SharePoint and Supabase. I focus on building
+                    accessible, WCAG-aligned interfaces, with strong automated
+                    testing and developer tooling to keep large codebases
+                    reliable over time.
+                </p>
+                <details>
+                    <summary>Core Skills & Technologies</summary>
+                    <div
+                        class="pills-menu"
+                        role="tablist"
+                        aria-label="Core skills categories"
+                        aria-orientation="horizontal"
+                    >
+                        <button
+                            type="button"
+                            class="menu-pill is-active"
+                            role="tab"
+                            id="skills-tab-frontend"
+                            aria-selected="true"
+                            aria-controls="skills-panel-frontend"
+                            data-skill-id="frontend"
+                        >
+                            Frontend
+                        </button>
+
+                        <button
+                            type="button"
+                            class="menu-pill"
+                            role="tab"
+                            id="skills-tab-ui"
+                            aria-selected="false"
+                            aria-controls="skills-panel-ui"
+                            data-skill-id="ui"
+                        >
+                            UI Engineering
+                        </button>
+
+                        <button
+                            type="button"
+                            class="menu-pill"
+                            role="tab"
+                            id="skills-tab-a11y"
+                            aria-selected="false"
+                            aria-controls="skills-panel-a11y"
+                            data-skill-id="a11y"
+                        >
+                            Accessibility
+                        </button>
+
+                        <button
+                            type="button"
+                            class="menu-pill"
+                            role="tab"
+                            id="skills-tab-testing"
+                            aria-selected="false"
+                            aria-controls="skills-panel-testing"
+                            data-skill-id="testing"
+                        >
+                            Testing &amp; Quality
+                        </button>
+
+                        <button
+                            type="button"
+                            class="menu-pill"
+                            role="tab"
+                            id="skills-tab-fullstack"
+                            aria-selected="false"
+                            aria-controls="skills-panel-fullstack"
+                            data-skill-id="fullstack"
+                        >
+                            Fullstack &amp; Platforms
+                        </button>
+
+                        <button
+                            type="button"
+                            class="menu-pill"
+                            role="tab"
+                            id="skills-tab-tooling"
+                            aria-selected="false"
+                            aria-controls="skills-panel-tooling"
+                            data-skill-id="tooling"
+                        >
+                            Tooling
+                        </button>
+
+                        <button
+                            type="button"
+                            class="menu-pill"
+                            role="tab"
+                            id="skills-tab-collab"
+                            aria-selected="false"
+                            aria-controls="skills-panel-collab"
+                            data-skill-id="collab"
+                        >
+                            Collaboration
+                        </button>
+                    </div>
+
+                    <div
+                        id="skills-panel-frontend"
+                        class="skills-panel is-active"
+                        role="tabpanel"
+                        aria-labelledby="skills-tab-frontend"
+                        data-skill-id="frontend"
+                    >
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>Zustand</li>
+                            <li>React Query</li>
+                            <li>MobX</li>
+                            <li>Fluent UI</li>
+                            <li>Next.js</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        id="skills-panel-ui"
+                        class="skills-panel"
+                        role="tabpanel"
+                        aria-labelledby="skills-tab-ui"
+                        data-skill-id="ui"
+                        hidden
+                    >
+                        <h3>UI Engineering</h3>
+                        <ul>
+                            <li>Component architecture &amp; design systems</li>
+                            <li>Dynamic forms &amp; conditional workflows</li>
+                            <li>Schema-driven UIs</li>
+                            <li>Storybook</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        id="skills-panel-a11y"
+                        class="skills-panel"
+                        role="tabpanel"
+                        aria-labelledby="skills-tab-a11y"
+                        data-skill-id="a11y"
+                        hidden
+                    >
+                        <h3>Accessibility</h3>
+                        <ul>
+                            <li>WCAG 2.2-aligned UI development</li>
+                            <li>Screen reader testing</li>
+                            <li>Accessibility design reviews</li>
+                            <li>a11y linting &amp; automated checks</li>
+                            <li>Inclusive UI practices</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        id="skills-panel-testing"
+                        class="skills-panel"
+                        role="tabpanel"
+                        aria-labelledby="skills-tab-testing"
+                        data-skill-id="testing"
+                        hidden
+                    >
+                        <h3>Testing &amp; Quality</h3>
+                        <ul>
+                            <li>Jest</li>
+                            <li>React Testing Library</li>
+                            <li>Storybook-based testing</li>
+                            <li>a11y testing</li>
+                            <li>CI pipelines</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        id="skills-panel-fullstack"
+                        class="skills-panel"
+                        role="tabpanel"
+                        aria-labelledby="skills-tab-fullstack"
+                        data-skill-id="fullstack"
+                        hidden
+                    >
+                        <h3>Fullstack &amp; Platforms</h3>
+                        <ul>
+                            <li>Next.js API routes</li>
+                            <li>Supabase</li>
+                            <li>SharePoint / ODSP integration</li>
+                            <li>JSON schema design</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        id="skills-panel-tooling"
+                        class="skills-panel"
+                        role="tabpanel"
+                        aria-labelledby="skills-tab-tooling"
+                        data-skill-id="tooling"
+                        hidden
+                    >
+                        <h3>Tooling</h3>
+                        <ul>
+                            <li>Webpack</li>
+                            <li>Vite</li>
+                            <li>Tauri</li>
+                            <li>Browser extensions</li>
+                            <li>VS Code &amp; Obsidian plugins</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        id="skills-panel-collab"
+                        class="skills-panel"
+                        role="tabpanel"
+                        aria-labelledby="skills-tab-collab"
+                        data-skill-id="collab"
+                        hidden
+                    >
+                        <h3>Collaboration</h3>
+                        <ul>
+                            <li>Triad model (PM / Design / Engineering)</li>
+                            <li>Cross-geo teams</li>
+                            <li>Mentoring early-in-career engineers</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Work Experience</summary>
+
+                    <h3>Microsoft - Software Engineer (2022 - Present)</h3>
+
+                    <h4>
+                        AI &amp; Fullstack Engineering - OneDrive &amp;
+                        SharePoint (2024 - Present)
+                    </h4>
+                    <ul>
+                        <li>
+                            Built multi-step dynamic forms with conditional
+                            logic, API-driven validation, and robust error
+                            handling for a new SharePoint AI provisioning
+                            experience.
+                        </li>
+                        <li>
+                            Designed and implemented schema-driven workflows to
+                            improve reliability and predictability of AI-powered
+                            provisioning.
+                        </li>
+                        <li>
+                            Introduced Jest testing from scratch, raising
+                            coverage from 0% to 95% unit and 98% branch,
+                            catching schema-breaking regressions early in CI.
+                        </li>
+                        <li>
+                            Partnered closely with PM and Design through rapid
+                            POCs and prototypes to shape product direction and
+                            engineering scope.
+                        </li>
+                    </ul>
+
+                    <h4>
+                        Frontend Engineering - Microsoft Teams (Shifts) (2022 -
+                        2024)
+                    </h4>
+                    <ul>
+                        <li>
+                            Delivered major UI features across a large,
+                            virtualised scheduling interface used by 2M+ monthly
+                            active users.
+                        </li>
+                        <li>
+                            Built complex flows including filtering, feedback,
+                            and time-off approval across a custom
+                            React/TypeScript codebase.
+                        </li>
+                        <li>
+                            Led a full accessibility overhaul, reducing a
+                            backlog of 300+ issues to zero and cutting
+                            regressions from 5-10 per sprint to 1-2 low-severity
+                            issues.
+                        </li>
+                        <li>
+                            Guided ~20 engineers as the accessibility domain
+                            expert through design reviews, PR feedback, and
+                            hands-on debugging support.
+                        </li>
+                        <li>
+                            Delivered a cross-org talk to 40-50 engineers on
+                            tackling large accessibility backlogs, covering
+                            prioritisation, testing, and bug-grouping
+                            strategies.
+                        </li>
+                    </ul>
+
+                    <h4>Accessibility Leadership (Teams &amp; ODSP)</h4>
+                    <ul>
+                        <li>
+                            Drove Shifts to achieve the highest internal
+                            accessibility grade in Microsoft's Experiences &amp;
+                            Devices division.
+                        </li>
+                        <li>
+                            Authored internal documentation on accessibility
+                            best practices and testing workflows.
+                        </li>
+                        <li>
+                            Mentored new graduate engineers through pairing,
+                            code reviews, and onboarding support.
+                        </li>
+                    </ul>
+                </details>
+            </section>
+
+            <section id="projects">
+                <h2>Selected Projects</h2>
+                <p>Here are some of the projects I've worked on:</p>
+
                 <div
                     class="pills-menu"
                     role="tablist"
-                    aria-label="Core skills categories"
+                    aria-label="Projects"
                     aria-orientation="horizontal"
                 >
                     <button
                         type="button"
                         class="menu-pill is-active"
                         role="tab"
-                        id="skills-tab-frontend"
+                        id="project-tab-traitors"
                         aria-selected="true"
-                        aria-controls="skills-panel-frontend"
-                        data-skill-id="frontend"
+                        aria-controls="project-traitors"
+                        data-project-id="traitors"
                     >
-                        Frontend
+                        Traitors Game
                     </button>
-
                     <button
                         type="button"
                         class="menu-pill"
                         role="tab"
-                        id="skills-tab-ui"
+                        id="project-tab-ado"
                         aria-selected="false"
-                        aria-controls="skills-panel-ui"
-                        data-skill-id="ui"
+                        aria-controls="project-ado"
+                        data-project-id="ado"
                     >
-                        UI Engineering
+                        Azure DevOps PR File Colors
                     </button>
-
                     <button
                         type="button"
                         class="menu-pill"
                         role="tab"
-                        id="skills-tab-a11y"
+                        id="project-tab-countdown"
                         aria-selected="false"
-                        aria-controls="skills-panel-a11y"
-                        data-skill-id="a11y"
+                        aria-controls="project-countdown"
+                        data-project-id="countdown"
                     >
-                        Accessibility
+                        Countdown Desktop App
                     </button>
-
                     <button
                         type="button"
                         class="menu-pill"
                         role="tab"
-                        id="skills-tab-testing"
+                        id="project-tab-mortgage"
                         aria-selected="false"
-                        aria-controls="skills-panel-testing"
-                        data-skill-id="testing"
+                        aria-controls="project-mortgage"
+                        data-project-id="mortgage"
                     >
-                        Testing &amp; Quality
+                        Irish Mortgage Calculator
                     </button>
-
                     <button
                         type="button"
                         class="menu-pill"
                         role="tab"
-                        id="skills-tab-fullstack"
+                        id="project-tab-bases"
                         aria-selected="false"
-                        aria-controls="skills-panel-fullstack"
-                        data-skill-id="fullstack"
+                        aria-controls="project-bases"
+                        data-project-id="bases"
                     >
-                        Fullstack &amp; Platforms
+                        Obsidian Plugin
                     </button>
-
                     <button
                         type="button"
                         class="menu-pill"
                         role="tab"
-                        id="skills-tab-tooling"
+                        id="project-tab-goals"
                         aria-selected="false"
-                        aria-controls="skills-panel-tooling"
-                        data-skill-id="tooling"
+                        aria-controls="project-goals"
+                        data-project-id="goals"
                     >
-                        Tooling
-                    </button>
-
-                    <button
-                        type="button"
-                        class="menu-pill"
-                        role="tab"
-                        id="skills-tab-collab"
-                        aria-selected="false"
-                        aria-controls="skills-panel-collab"
-                        data-skill-id="collab"
-                    >
-                        Collaboration
+                        Goals Bingo
                     </button>
                 </div>
 
-                <div
-                    id="skills-panel-frontend"
-                    class="skills-panel is-active"
+                <article
+                    id="project-traitors"
+                    class="project-panel is-active"
                     role="tabpanel"
-                    aria-labelledby="skills-tab-frontend"
-                    data-skill-id="frontend"
-                >
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>React</li>
-                        <li>TypeScript</li>
-                        <li>JavaScript</li>
-                        <li>Zustand</li>
-                        <li>React Query</li>
-                        <li>MobX</li>
-                        <li>Fluent UI</li>
-                        <li>Next.js</li>
-                    </ul>
-                </div>
-
-                <div
-                    id="skills-panel-ui"
-                    class="skills-panel"
-                    role="tabpanel"
-                    aria-labelledby="skills-tab-ui"
-                    data-skill-id="ui"
-                    hidden
-                >
-                    <h3>UI Engineering</h3>
-                    <ul>
-                        <li>Component architecture &amp; design systems</li>
-                        <li>Dynamic forms &amp; conditional workflows</li>
-                        <li>Schema-driven UIs</li>
-                        <li>Storybook</li>
-                    </ul>
-                </div>
-
-                <div
-                    id="skills-panel-a11y"
-                    class="skills-panel"
-                    role="tabpanel"
-                    aria-labelledby="skills-tab-a11y"
-                    data-skill-id="a11y"
-                    hidden
-                >
-                    <h3>Accessibility</h3>
-                    <ul>
-                        <li>WCAG 2.2-aligned UI development</li>
-                        <li>Screen reader testing</li>
-                        <li>Accessibility design reviews</li>
-                        <li>a11y linting &amp; automated checks</li>
-                        <li>Inclusive UI practices</li>
-                    </ul>
-                </div>
-
-                <div
-                    id="skills-panel-testing"
-                    class="skills-panel"
-                    role="tabpanel"
-                    aria-labelledby="skills-tab-testing"
-                    data-skill-id="testing"
-                    hidden
-                >
-                    <h3>Testing &amp; Quality</h3>
-                    <ul>
-                        <li>Jest</li>
-                        <li>React Testing Library</li>
-                        <li>Storybook-based testing</li>
-                        <li>a11y testing</li>
-                        <li>CI pipelines</li>
-                    </ul>
-                </div>
-
-                <div
-                    id="skills-panel-fullstack"
-                    class="skills-panel"
-                    role="tabpanel"
-                    aria-labelledby="skills-tab-fullstack"
-                    data-skill-id="fullstack"
-                    hidden
-                >
-                    <h3>Fullstack &amp; Platforms</h3>
-                    <ul>
-                        <li>Next.js API routes</li>
-                        <li>Supabase</li>
-                        <li>SharePoint / ODSP integration</li>
-                        <li>JSON schema design</li>
-                    </ul>
-                </div>
-
-                <div
-                    id="skills-panel-tooling"
-                    class="skills-panel"
-                    role="tabpanel"
-                    aria-labelledby="skills-tab-tooling"
-                    data-skill-id="tooling"
-                    hidden
-                >
-                    <h3>Tooling</h3>
-                    <ul>
-                        <li>Webpack</li>
-                        <li>Vite</li>
-                        <li>Tauri</li>
-                        <li>Browser extensions</li>
-                        <li>VS Code &amp; Obsidian plugins</li>
-                    </ul>
-                </div>
-
-                <div
-                    id="skills-panel-collab"
-                    class="skills-panel"
-                    role="tabpanel"
-                    aria-labelledby="skills-tab-collab"
-                    data-skill-id="collab"
-                    hidden
-                >
-                    <h3>Collaboration</h3>
-                    <ul>
-                        <li>Triad model (PM / Design / Engineering)</li>
-                        <li>Cross-geo teams</li>
-                        <li>Mentoring early-in-career engineers</li>
-                    </ul>
-                </div>
-            </details>
-
-            <details>
-                <summary>Work Experience</summary>
-
-                <h3>Microsoft - Software Engineer (2022 - Present)</h3>
-
-                <h4>
-                    AI &amp; Fullstack Engineering - OneDrive &amp; SharePoint
-                    (2024 - Present)
-                </h4>
-                <ul>
-                    <li>
-                        Built multi-step dynamic forms with conditional logic,
-                        API-driven validation, and robust error handling for a
-                        new SharePoint AI provisioning experience.
-                    </li>
-                    <li>
-                        Designed and implemented schema-driven workflows to
-                        improve reliability and predictability of AI-powered
-                        provisioning.
-                    </li>
-                    <li>
-                        Introduced Jest testing from scratch, raising coverage
-                        from 0% to 95% unit and 98% branch, catching
-                        schema-breaking regressions early in CI.
-                    </li>
-                    <li>
-                        Partnered closely with PM and Design through rapid POCs
-                        and prototypes to shape product direction and
-                        engineering scope.
-                    </li>
-                </ul>
-
-                <h4>
-                    Frontend Engineering - Microsoft Teams (Shifts) (2022 -
-                    2024)
-                </h4>
-                <ul>
-                    <li>
-                        Delivered major UI features across a large, virtualised
-                        scheduling interface used by 2M+ monthly active users.
-                    </li>
-                    <li>
-                        Built complex flows including filtering, feedback, and
-                        time-off approval across a custom React/TypeScript
-                        codebase.
-                    </li>
-                    <li>
-                        Led a full accessibility overhaul, reducing a backlog of
-                        300+ issues to zero and cutting regressions from 5-10
-                        per sprint to 1-2 low-severity issues.
-                    </li>
-                    <li>
-                        Guided ~20 engineers as the accessibility domain expert
-                        through design reviews, PR feedback, and hands-on
-                        debugging support.
-                    </li>
-                    <li>
-                        Delivered a cross-org talk to 40-50 engineers on
-                        tackling large accessibility backlogs, covering
-                        prioritisation, testing, and bug-grouping strategies.
-                    </li>
-                </ul>
-
-                <h4>Accessibility Leadership (Teams &amp; ODSP)</h4>
-                <ul>
-                    <li>
-                        Drove Shifts to achieve the highest internal
-                        accessibility grade in Microsoft's Experiences &amp;
-                        Devices division.
-                    </li>
-                    <li>
-                        Authored internal documentation on accessibility best
-                        practices and testing workflows.
-                    </li>
-                    <li>
-                        Mentored new graduate engineers through pairing, code
-                        reviews, and onboarding support.
-                    </li>
-                </ul>
-            </details>
-        </section>
-
-        <section id="projects">
-            <h2>Selected Projects</h2>
-            <p>Here are some of the projects I've worked on:</p>
-
-            <div
-                class="pills-menu"
-                role="tablist"
-                aria-label="Projects"
-                aria-orientation="horizontal"
-            >
-                <button
-                    type="button"
-                    class="menu-pill is-active"
-                    role="tab"
-                    id="project-tab-traitors"
-                    aria-selected="true"
-                    aria-controls="project-traitors"
+                    aria-labelledby="project-tab-traitors"
                     data-project-id="traitors"
                 >
-                    Traitors Game
-                </button>
-                <button
-                    type="button"
-                    class="menu-pill"
-                    role="tab"
-                    id="project-tab-ado"
-                    aria-selected="false"
-                    aria-controls="project-ado"
+                    <h3>Traitors Game (Next.js + Supabase)</h3>
+                    <p>
+                        A real-time multiplayer game tool for 10-20 players,
+                        handling voting, round progression, traitor actions, and
+                        win logic. Built with Next.js and Supabase and used
+                        multiple times with excellent feedback on the UI and
+                        usability.
+                    </p>
+
+                    <h4>Motivation</h4>
+
+                    <p>
+                        I built this to make it easier to run social deduction
+                        games with friends without relying on pen-and-paper or
+                        ad-hoc tracking. The goal was a smooth, guided
+                        experience that keeps the focus on the people and the
+                        game, not on the mechanics.
+                    </p>
+                </article>
+
+                <article
+                    id="project-ado"
+                    class="project-panel"
+                    role="tabpanel"
+                    aria-labelledby="project-tab-ado"
                     data-project-id="ado"
+                    hidden
                 >
-                    Azure DevOps PR File Colors
-                </button>
-                <button
-                    type="button"
-                    class="menu-pill"
-                    role="tab"
-                    id="project-tab-countdown"
-                    aria-selected="false"
-                    aria-controls="project-countdown"
-                    data-project-id="countdown"
-                >
-                    Countdown Desktop App
-                </button>
-                <button
-                    type="button"
-                    class="menu-pill"
-                    role="tab"
-                    id="project-tab-mortgage"
-                    aria-selected="false"
-                    aria-controls="project-mortgage"
-                    data-project-id="mortgage"
-                >
-                    Irish Mortgage Calculator
-                </button>
-                <button
-                    type="button"
-                    class="menu-pill"
-                    role="tab"
-                    id="project-tab-bases"
-                    aria-selected="false"
-                    aria-controls="project-bases"
-                    data-project-id="bases"
-                >
-                    Obsidian Plugin
-                </button>
-                <button
-                    type="button"
-                    class="menu-pill"
-                    role="tab"
-                    id="project-tab-goals"
-                    aria-selected="false"
-                    aria-controls="project-goals"
-                    data-project-id="goals"
-                >
-                    Goals Bingo
-                </button>
-            </div>
+                    <h3>Azure DevOps PR File Colors (Edge Extension)</h3>
+                    <p>
+                        A published Microsoft Edge extension that improves Azure
+                        Repos pull request review workflows by colour-coding
+                        truncated filenames, making it easier to scan large PRs.
+                    </p>
 
-            <article
-                id="project-traitors"
-                class="project-panel is-active"
-                role="tabpanel"
-                aria-labelledby="project-tab-traitors"
-                data-project-id="traitors"
-            >
-                <h3>Traitors Game (Next.js + Supabase)</h3>
-                <p>
-                    A real-time multiplayer game tool for 10-20 players,
-                    handling voting, round progression, traitor actions, and win
-                    logic. Built with Next.js and Supabase and used multiple
-                    times with excellent feedback on the UI and usability.
-                </p>
-
-                <h4>Motivation</h4>
-
-                <p>
-                    I built this to make it easier to run social deduction games
-                    with friends without relying on pen-and-paper or ad-hoc
-                    tracking. The goal was a smooth, guided experience that
-                    keeps the focus on the people and the game, not on the
-                    mechanics.
-                </p>
-            </article>
-
-            <article
-                id="project-ado"
-                class="project-panel"
-                role="tabpanel"
-                aria-labelledby="project-tab-ado"
-                data-project-id="ado"
-                hidden
-            >
-                <h3>Azure DevOps PR File Colors (Edge Extension)</h3>
-                <p>
-                    A published Microsoft Edge extension that improves Azure
-                    Repos pull request review workflows by colour-coding
-                    truncated filenames, making it easier to scan large PRs.
-                </p>
-
-                <p>
-                    Available in the Edge Add-ons store:
-                    <a
-                        href="https://microsoftedge.microsoft.com/addons/detail/azure-devops-pr-file-colo/hkbjkpnejiineapdecdhjnjmldbccjfb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Azure DevOps PR File Colors</a
-                    >
-                </p>
-
-                <h4>Motivation</h4>
-                <p>
-                    This started as a small quality-of-life fix for my own code
-                    reviews. Long file paths were constantly truncated in PRs,
-                    so I built an extension to make important files stand out
-                    visually and reduce cognitive overhead during reviews for my
-                    team.
-                </p>
-
-                <img
-                    src="images/ado-pr-file-colors-screenshot.png"
-                    alt="Screenshot of Azure DevOps PR File Colors extension popup, showing settings for typescipt and tsx files with custom colours."
-                    style="
-                        display: block;
-                        justify-self: center;
-                        max-width: 100%;
-                        border: 1px solid #ccc;
-                        border-radius: 10px;
-                        margin-top: 10px;
-                    "
-                />
-            </article>
-
-            <article
-                id="project-bases"
-                class="project-panel"
-                role="tabpanel"
-                aria-labelledby="project-tab-bases"
-                data-project-id="bases"
-                hidden
-            >
-                <h3>Bases Style Enhancer (Obsidian Plugin)</h3>
-                <p>
-                    A small Obsidian community plugin that lets you adjust the
-                    font size of Bases table views using a single CSS variable,
-                    so table cells (and optionally headers) stay readable and
-                    consistent across your vault.
-                </p>
-
-                <h4>Motivation</h4>
-                <p>
-                    I built this to make Bases tables easier to read for people
-                    who prefer larger or more consistent text sizing in
-                    Obsidian, while keeping the implementation deliberately tiny
-                    and easy to maintain.
-                </p>
-
-                <h4>Repository</h4>
-                <p>
-                    Source available on GitHub:
-                    <a
-                        href="https://github.com/UniqueClone/bases-style-enhancer"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >github.com/UniqueClone/bases-style-enhancer</a
-                    >.
-                </p>
-
-                <h4>Screenshots</h4>
-                <figure style="margin: 0 0 0.75rem; text-align: center">
-                    <img
-                        src="images/bases-style-enhancer-before.png"
-                        alt="Bases table view in Obsidian before applying Bases Style Enhancer, using the default font size."
-                        style="
-                            max-width: 100%;
-                            border: 1px solid #ccc;
-                            border-radius: 10px;
-                        "
-                    />
-                    <figcaption>
-                        Before - Obsidian Bases table with default font size.
-                    </figcaption>
-                </figure>
-
-                <figure style="margin: 0 0 0.75rem; text-align: center">
-                    <img
-                        src="images/bases-style-enhancer-after-1.25rem.png"
-                        alt="Bases table view in Obsidian after setting Bases Style Enhancer font size to 1.25rem."
-                        style="
-                            max-width: 100%;
-                            border: 1px solid #ccc;
-                            border-radius: 10px;
-                        "
-                    />
-                    <figcaption>
-                        After - Obsidian Bases table with font size set to
-                        1.25rem.
-                    </figcaption>
-                </figure>
-            </article>
-
-            <article
-                id="project-countdown"
-                class="project-panel"
-                role="tabpanel"
-                aria-labelledby="project-tab-countdown"
-                data-project-id="countdown"
-                hidden
-            >
-                <h3>Countdown Desktop App</h3>
-                <p>
-                    Cross-platform countdown timer desktop app packaged as a
-                    downloadable executable. Source:
-                    <a
-                        href="https://github.com/UniqueClone/countdown-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >github.com/UniqueClone/countdown-app</a
-                    >.
-                </p>
-                <h4>Motivation</h4>
-                <p>
-                    I wanted a lightweight, offline-friendly way to track the
-                    time remaining until my next meeting, and to always have it
-                    visible on my desktop. This project also let me explore
-                    Tauri as an alternative to Electron for cross-platform
-                    desktop apps.
-                </p>
-            </article>
-
-            <article
-                id="project-mortgage"
-                class="project-panel"
-                role="tabpanel"
-                aria-labelledby="project-tab-mortgage"
-                data-project-id="mortgage"
-                hidden
-            >
-                <h3>Irish Mortgage Calculator</h3>
-                <p>
-                    Custom <strong>mortgage calculator</strong> for Irish
-                    homebuyers, designed as a flexible "bring your own terms"
-                    tool. It lets users quickly compare monthly mortgage
-                    payments across different banks and scenarios using the loan
-                    amounts, interest rates, fees, and terms they already have.
-                </p>
-
-                <h4>Tech Stack</h4>
-
-                <p>
-                    Built with <strong>React</strong>,
-                    <strong>TypeScript</strong>, and
-                    <strong>Fluent UI v9</strong>, and hosted on
-                    <strong>Azure Static Web Apps</strong>.
-                </p>
-
-                <h4>Motivation</h4>
-                <p>
-                    When my partner and I were buying our first home, most
-                    online calculators were focused on product discovery rather
-                    than quickly comparing scenarios. I built this tool so we
-                    could quickly plug in the exact terms we were offered and
-                    compare monthly payments and how much savings we needed
-                    across multiple houses and banks.
-                </p>
-
-                <h4>Try It Out</h4>
-
-                <p>
-                    You can try out the calculator below or visit the live site
-                    at
-                    <a
-                        href="https://onlinemortgagecalculator.ie"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >onlinemortgagecalculator.ie</a
-                    >.
-                </p>
-
-                <iframe
-                    src="https://onlinemortgagecalculator.ie"
-                    frameborder="0"
-                    width="100%"
-                    height="750px"
-                    title="Irish Mortgage Calculator"
-                    style="border: 1px solid #ccc; border-radius: 20px"
-                ></iframe>
-            </article>
-
-            <article
-                id="project-goals"
-                class="project-panel"
-                role="tabpanel"
-                aria-labelledby="project-tab-goals"
-                data-project-id="goals"
-                hidden
-            >
-                <h3>Goals Bingo</h3>
-                <p>
-                    This is a simple <strong>bingo game</strong> for
-                    <strong>New Year's Resolutions</strong>. It allows users to
-                    create a bingo card with their goals and share it with
-                    friends.
-                </p>
-
-                <h4>Tech Stack</h4>
-
-                <p>
-                    Built using <strong>React</strong> and
-                    <strong>TypeScript</strong>, and hosted on
-                    <strong>Vercel</strong>. It can be installed as a
-                    Progressive Web App (PWA) on both desktop and mobile
-                    devices.
-                </p>
-
-                <h4>Motivation</h4>
-                <p>
-                    I originally built Goals Bingo for myself and my friends as
-                    a different take on New Year's resolutions. Instead of a
-                    simple pass/fail list written in one evening, we create a
-                    bingo card filled with goals of varying difficulty. Over the
-                    year we try to complete a row, column, or diagonal,
-                    reflecting the idea that life isn't about hitting every goal
-                    perfectly, but about continually improving and celebrating
-                    the progress you do make.
-                </p>
-                <p>
-                    I made the app work offline as a PWA so friends who travel
-                    frequently can still plan and track goals without a
-                    connection.
-                </p>
-
-                <h4>Try It Out</h4>
-
-                <p>
-                    You can try out the app below or visit the live site at
-                    <a
-                        href="https://goals-bingo.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >goals-bingo.vercel.app</a
-                    >.
-                </p>
-
-                <iframe
-                    src="https://goals-bingo.vercel.app/"
-                    frameborder="0"
-                    width="100%"
-                    height="750px"
-                    title="Goals Bingo"
-                    style="border: 1px solid #ccc; border-radius: 20px"
-                ></iframe>
-            </article>
-        </section>
-
-        <section id="cv">
-            <h2>Curriculum Vitae</h2>
-            <p>You can view or download my CV using the link below.</p>
-            <p>
-                <a
-                    href="Ryan Lynch CV.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View / Download CV (PDF)
-                </a>
-            </p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                If you'd like to get in touch, feel free to reach out via email
-                or connect with me on LinkedIn. I'm always open to discussing
-                new projects, collaborations, or just having a chat about
-                technology.
-            </p>
-
-            <ul style="list-style: none; padding: 0">
-                <li>
-                    <a href="mailto:lynchryan2@gmail.com" target="_blank">
-                        <span class="contact-icon" aria-hidden="true">✉</span>
-                        <span>Email</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.linkedin.com/in/lynchryan2/"
-                        target="_blank"
-                    >
-                        <span class="contact-icon" aria-hidden="true">in</span>
-                        <span>LinkedIn</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.github.com/uniqueclone"
-                        target="_blank"
-                    >
-                        <span class="contact-icon" aria-hidden="true"
-                            >&lt;/&gt;</span
+                    <p>
+                        Available in the Edge Add-ons store:
+                        <a
+                            href="https://microsoftedge.microsoft.com/addons/detail/azure-devops-pr-file-colo/hkbjkpnejiineapdecdhjnjmldbccjfb"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Azure DevOps PR File Colors</a
                         >
-                        <span>GitHub</span>
+                    </p>
+
+                    <h4>Motivation</h4>
+                    <p>
+                        This started as a small quality-of-life fix for my own
+                        code reviews. Long file paths were constantly truncated
+                        in PRs, so I built an extension to make important files
+                        stand out visually and reduce cognitive overhead during
+                        reviews for my team.
+                    </p>
+
+                    <img
+                        src="images/ado-pr-file-colors-screenshot.png"
+                        alt="Screenshot of Azure DevOps PR File Colors extension popup, showing settings for typescipt and tsx files with custom colours."
+                        style="
+                            display: block;
+                            justify-self: center;
+                            max-width: 100%;
+                            border: 1px solid #ccc;
+                            border-radius: 10px;
+                            margin-top: 10px;
+                        "
+                    />
+                </article>
+
+                <article
+                    id="project-bases"
+                    class="project-panel"
+                    role="tabpanel"
+                    aria-labelledby="project-tab-bases"
+                    data-project-id="bases"
+                    hidden
+                >
+                    <h3>Bases Style Enhancer (Obsidian Plugin)</h3>
+                    <p>
+                        A small Obsidian community plugin that lets you adjust
+                        the font size of Bases table views using a single CSS
+                        variable, so table cells (and optionally headers) stay
+                        readable and consistent across your vault.
+                    </p>
+
+                    <h4>Motivation</h4>
+                    <p>
+                        I built this to make Bases tables easier to read for
+                        people who prefer larger or more consistent text sizing
+                        in Obsidian, while keeping the implementation
+                        deliberately tiny and easy to maintain.
+                    </p>
+
+                    <h4>Repository</h4>
+                    <p>
+                        Source available on GitHub:
+                        <a
+                            href="https://github.com/UniqueClone/bases-style-enhancer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >github.com/UniqueClone/bases-style-enhancer</a
+                        >.
+                    </p>
+
+                    <h4>Screenshots</h4>
+                    <figure style="margin: 0 0 0.75rem; text-align: center">
+                        <img
+                            src="images/bases-style-enhancer-before.png"
+                            alt="Bases table view in Obsidian before applying Bases Style Enhancer, using the default font size."
+                            style="
+                                max-width: 100%;
+                                border: 1px solid #ccc;
+                                border-radius: 10px;
+                            "
+                        />
+                        <figcaption>
+                            Before - Obsidian Bases table with default font
+                            size.
+                        </figcaption>
+                    </figure>
+
+                    <figure style="margin: 0 0 0.75rem; text-align: center">
+                        <img
+                            src="images/bases-style-enhancer-after-1.25rem.png"
+                            alt="Bases table view in Obsidian after setting Bases Style Enhancer font size to 1.25rem."
+                            style="
+                                max-width: 100%;
+                                border: 1px solid #ccc;
+                                border-radius: 10px;
+                            "
+                        />
+                        <figcaption>
+                            After - Obsidian Bases table with font size set to
+                            1.25rem.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article
+                    id="project-countdown"
+                    class="project-panel"
+                    role="tabpanel"
+                    aria-labelledby="project-tab-countdown"
+                    data-project-id="countdown"
+                    hidden
+                >
+                    <h3>Countdown Desktop App</h3>
+                    <p>
+                        Cross-platform countdown timer desktop app packaged as a
+                        downloadable executable. Source:
+                        <a
+                            href="https://github.com/UniqueClone/countdown-app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >github.com/UniqueClone/countdown-app</a
+                        >.
+                    </p>
+                    <h4>Motivation</h4>
+                    <p>
+                        I wanted a lightweight, offline-friendly way to track
+                        the time remaining until my next meeting, and to always
+                        have it visible on my desktop. This project also let me
+                        explore Tauri as an alternative to Electron for
+                        cross-platform desktop apps.
+                    </p>
+                </article>
+
+                <article
+                    id="project-mortgage"
+                    class="project-panel"
+                    role="tabpanel"
+                    aria-labelledby="project-tab-mortgage"
+                    data-project-id="mortgage"
+                    hidden
+                >
+                    <h3>Irish Mortgage Calculator</h3>
+                    <p>
+                        Custom <strong>mortgage calculator</strong> for Irish
+                        homebuyers, designed as a flexible "bring your own
+                        terms" tool. It lets users quickly compare monthly
+                        mortgage payments across different banks and scenarios
+                        using the loan amounts, interest rates, fees, and terms
+                        they already have.
+                    </p>
+
+                    <h4>Tech Stack</h4>
+
+                    <p>
+                        Built with <strong>React</strong>,
+                        <strong>TypeScript</strong>, and
+                        <strong>Fluent UI v9</strong>, and hosted on
+                        <strong>Azure Static Web Apps</strong>.
+                    </p>
+
+                    <h4>Motivation</h4>
+                    <p>
+                        When my partner and I were buying our first home, most
+                        online calculators were focused on product discovery
+                        rather than quickly comparing scenarios. I built this
+                        tool so we could quickly plug in the exact terms we were
+                        offered and compare monthly payments and how much
+                        savings we needed across multiple houses and banks.
+                    </p>
+
+                    <h4>Try It Out</h4>
+
+                    <p>
+                        You can try out the calculator below or visit the live
+                        site at
+                        <a
+                            href="https://onlinemortgagecalculator.ie"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >onlinemortgagecalculator.ie</a
+                        >.
+                    </p>
+
+                    <iframe
+                        src="https://onlinemortgagecalculator.ie"
+                        frameborder="0"
+                        width="100%"
+                        height="750px"
+                        title="Irish Mortgage Calculator"
+                        style="border: 1px solid #ccc; border-radius: 20px"
+                    ></iframe>
+                </article>
+
+                <article
+                    id="project-goals"
+                    class="project-panel"
+                    role="tabpanel"
+                    aria-labelledby="project-tab-goals"
+                    data-project-id="goals"
+                    hidden
+                >
+                    <h3>Goals Bingo</h3>
+                    <p>
+                        This is a simple <strong>bingo game</strong> for
+                        <strong>New Year's Resolutions</strong>. It allows users
+                        to create a bingo card with their goals and share it
+                        with friends.
+                    </p>
+
+                    <h4>Tech Stack</h4>
+
+                    <p>
+                        Built using <strong>React</strong> and
+                        <strong>TypeScript</strong>, and hosted on
+                        <strong>Vercel</strong>. It can be installed as a
+                        Progressive Web App (PWA) on both desktop and mobile
+                        devices.
+                    </p>
+
+                    <h4>Motivation</h4>
+                    <p>
+                        I originally built Goals Bingo for myself and my friends
+                        as a different take on New Year's resolutions. Instead
+                        of a simple pass/fail list written in one evening, we
+                        create a bingo card filled with goals of varying
+                        difficulty. Over the year we try to complete a row,
+                        column, or diagonal, reflecting the idea that life isn't
+                        about hitting every goal perfectly, but about
+                        continually improving and celebrating the progress you
+                        do make.
+                    </p>
+                    <p>
+                        I made the app work offline as a PWA so friends who
+                        travel frequently can still plan and track goals without
+                        a connection.
+                    </p>
+
+                    <h4>Try It Out</h4>
+
+                    <p>
+                        You can try out the app below or visit the live site at
+                        <a
+                            href="https://goals-bingo.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >goals-bingo.vercel.app</a
+                        >.
+                    </p>
+
+                    <iframe
+                        src="https://goals-bingo.vercel.app/"
+                        frameborder="0"
+                        width="100%"
+                        height="750px"
+                        title="Goals Bingo"
+                        style="border: 1px solid #ccc; border-radius: 20px"
+                    ></iframe>
+                </article>
+            </section>
+
+            <section id="cv">
+                <h2>Curriculum Vitae</h2>
+                <p>You can view or download my CV using the link below.</p>
+                <p>
+                    <a
+                        href="Ryan Lynch CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View / Download CV (PDF)
                     </a>
-                </li>
-            </ul>
-        </section>
+                </p>
+            </section>
 
-        <footer>
-            <p>
-                &copy; <span id="year">2026</span> Ryan Lynch. All rights
-                reserved.
-            </p>
-            <script>
-                document.getElementById("year").textContent =
-                    new Date().getFullYear();
-            </script>
-        </footer>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>
+                    If you'd like to get in touch, feel free to reach out via
+                    email or connect with me on LinkedIn. I'm always open to
+                    discussing new projects, collaborations, or just having a
+                    chat about technology.
+                </p>
 
-        <a href="#contact" class="floating-contact-button">
-            <span class="floating-contact-icon" aria-hidden="true">✉</span>
-            <span>Get in touch!</span>
-        </a>
+                <ul style="list-style: none; padding: 0">
+                    <li>
+                        <a href="mailto:lynchryan2@gmail.com" target="_blank">
+                            <span class="contact-icon" aria-hidden="true"
+                                >✉</span
+                            >
+                            <span>Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/lynchryan2/"
+                            target="_blank"
+                        >
+                            <span class="contact-icon" aria-hidden="true"
+                                >in</span
+                            >
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.github.com/uniqueclone"
+                            target="_blank"
+                        >
+                            <span class="contact-icon" aria-hidden="true"
+                                >&lt;/&gt;</span
+                            >
+                            <span>GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
-        <script src="script.js"></script>
+            <footer>
+                <p>
+                    &copy; <span id="year">2026</span> Ryan Lynch. All rights
+                    reserved.
+                </p>
+                <script>
+                    document.getElementById("year").textContent =
+                        new Date().getFullYear();
+                </script>
+            </footer>
+
+            <a href="#contact" class="floating-contact-button">
+                <span class="floating-contact-icon" aria-hidden="true">✉</span>
+                <span>Get in touch!</span>
+            </a>
+
+            <script src="script.js"></script>
+        </main>
     </body>
 </html>
