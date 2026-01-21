@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -406,6 +406,17 @@
                     type="button"
                     class="menu-pill"
                     role="tab"
+                    id="project-tab-bases"
+                    aria-selected="false"
+                    aria-controls="project-bases"
+                    data-project-id="bases"
+                >
+                    Obsidian Plugin
+                </button>
+                <button
+                    type="button"
+                    class="menu-pill"
+                    role="tab"
                     id="project-tab-goals"
                     aria-selected="false"
                     aria-controls="project-goals"
@@ -487,6 +498,74 @@
                         margin-top: 10px;
                     "
                 />
+            </article>
+
+            <article
+                id="project-bases"
+                class="project-panel"
+                role="tabpanel"
+                aria-labelledby="project-tab-bases"
+                data-project-id="bases"
+                hidden
+            >
+                <h3>Bases Style Enhancer (Obsidian Plugin)</h3>
+                <p>
+                    A small Obsidian community plugin that lets you adjust the
+                    font size of Bases table views using a single CSS variable,
+                    so table cells (and optionally headers) stay readable and
+                    consistent across your vault.
+                </p>
+
+                <h4>Motivation</h4>
+                <p>
+                    I built this to make Bases tables easier to read for people
+                    who prefer larger or more consistent text sizing in
+                    Obsidian, while keeping the implementation deliberately tiny
+                    and easy to maintain.
+                </p>
+
+                <h4>Repository</h4>
+                <p>
+                    Source available on GitHub:
+                    <a
+                        href="https://github.com/UniqueClone/bases-style-enhancer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >github.com/UniqueClone/bases-style-enhancer</a
+                    >.
+                </p>
+
+                <h4>Screenshots</h4>
+                <figure style="margin: 0 0 0.75rem; text-align: center">
+                    <img
+                        src="images/bases-style-enhancer-before.png"
+                        alt="Bases table view in Obsidian before applying Bases Style Enhancer, using the default font size."
+                        style="
+                            max-width: 100%;
+                            border: 1px solid #ccc;
+                            border-radius: 10px;
+                        "
+                    />
+                    <figcaption>
+                        Before - Obsidian Bases table with default font size.
+                    </figcaption>
+                </figure>
+
+                <figure style="margin: 0 0 0.75rem; text-align: center">
+                    <img
+                        src="images/bases-style-enhancer-after-1.25rem.png"
+                        alt="Bases table view in Obsidian after setting Bases Style Enhancer font size to 1.25rem."
+                        style="
+                            max-width: 100%;
+                            border: 1px solid #ccc;
+                            border-radius: 10px;
+                        "
+                    />
+                    <figcaption>
+                        After - Obsidian Bases table with font size set to
+                        1.25rem.
+                    </figcaption>
+                </figure>
             </article>
 
             <article
